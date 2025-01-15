@@ -1,0 +1,15 @@
+python -u run.py \
+  --is_training 1 \
+  --root_path ./dataset/electricity/ \
+  --data_path electricity.csv \
+  --model_id ECL_96_192 \
+  --enc_in 321 \
+  --dec_in 321 \
+  --c_out 321 \
+  --des 'Exp' \
+  --batch_size 16 \
+  --learning_rate 0.00108 \
+  --weight_decay 9e-06\
+  --use_weight_dec\
+  --pred_len 192 \
+  --itr 1
